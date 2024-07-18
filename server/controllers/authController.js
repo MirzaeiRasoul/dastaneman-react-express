@@ -40,6 +40,7 @@ const register = (req, res) => {
     res.sendStatus(403)
     return
   }
+  // const hashedPassword = await bcrypt.hash(req.body.password, 10)
   const accessToken = generateAccessToken(newUser)
   createAccessTokenCookie(res, accessToken)
   res.send({ user: newUser, message: "Register successful!" })
