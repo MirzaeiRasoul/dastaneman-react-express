@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.07);
+}
+
+.logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.main-nav {
+    padding: 15px;
+    margin-right: 50px;
+}
+
+.main-nav .nav-item {
+    display: inline-block;
+    font-size: 1.05rem;
+    padding: 10px;
+    margin: 0 6px;
+}
+
+.main-nav .nav-item:nth-child(2) {
+    margin-left: 0px;
+}
+
+.main-nav .nav-item:nth-child(3) {
+    margin-right: 150px;
+}
+
+.main-nav .nav-item > a {
+    color: #000000;
+    display: block;
+    letter-spacing: -0.2px;
+}
+
+.main-nav .nav-item.active > a {
+    color: #FF0000;
+}

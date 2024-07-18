@@ -1,0 +1,61 @@
+.product-list-page .container {
+    max-width: 830px;
+}
+
+/* -------------------------------------------------- */
+.filters-section {
+    padding: 20px 5px 10px;
+}
+
+.topics,
+.ages {
+    display: inline;
+    padding-left: 25px;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.topics svg,
+.ages svg {
+    font-family: FontAwesome;
+    content: "\f078";
+    font-size: 0.9em;
+    margin-right: 6px;
+}
+
+/* -------------------------------------------------- */
+.products-section {
+    padding: 10px 0;
+}
+
+.products-section .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* -------------------------------------------------- */
+.paginate-section {
+    padding: 25px 0;
+}
+
+.paginate-section .paginate-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.paginate-section .paginate-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+/* -------------------------------------------------- */
+.new-product-section {
+    padding: 20px 0;
+    background-color: aliceblue;
+}

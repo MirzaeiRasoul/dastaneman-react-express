@@ -1,0 +1,98 @@
+.product-detail-page .container {
+    max-width: 830px;
+}
+
+/* -------------------------------------------------- */
+.content-section {
+    padding: 30px 0 20px;
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    gap: 20px;
+}
+
+.content-section .product-img img {
+    width: 100%;
+}
+
+.content-section .product-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.content-section .product-content h1.product-title {
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.content-section .product-content .product-detail {
+    color: #000000;
+    font-size: 0.825rem;
+    line-height: 1.5;
+}
+
+.content-section .product-content .product-price-box {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    padding: 5px;
+    margin: 20px 0 10px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+
+.content-section .product-content .product-price-box .product-price {
+    color: #000000;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.content-section .product-content .product-price-box .product-price-label {
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.content-section .product-content .product-link {
+    color: #FFFFFF;
+    align-self: center;
+    font-size: 1.2rem;
+    padding: 8px 20px;
+    border: 2px Solid #FFFFFF;
+    border-radius: 10px;
+    background-color: #00bb1d;
+}
+
+.content-section .product-content .product-price-and-detail {
+    align-self: center;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+/* -------------------------------------------------- */
+.related-products-section {
+    padding: 25px 0;
+}
+
+.related-products-section h2.section-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.related-products-section .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* -------------------------------------------------- */
+.gallery-section .gallery-list {
+    grid-auto-columns: 33.3%;
+}

@@ -1,0 +1,24 @@
+.user-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.user-tabs .user-tab-item {
+  display: flex;
+}
+
+.user-tabs .user-tab-item>a {
+  display: flex;
+  color: #666;
+  font-size: 0.95rem;
+  font-weight: 400;
+  padding: 10px 10px;
+}
+
+.user-tabs .user-tab-item>a.active {
+  color: #000000;
+  font-weight: 700;
+  border-bottom: 2px solid Red;
+}
