@@ -1,4 +1,4 @@
-const { verifyAccessToken } = require("../utils/jwtAuth")
+const { verifyAccessToken } = require("../utils/jwt")
 
 const validateToken = (req, res, next) => {
   const accessToken = req.cookies.ACCESS_TOKEN
@@ -7,7 +7,7 @@ const validateToken = (req, res, next) => {
 
   try {
     const payload = verifyAccessToken(accessToken)
-    req.userPayload = payload
+    req.user = payload
     // if (validToken) {
     //   req.authenticated = true
     //   return next();

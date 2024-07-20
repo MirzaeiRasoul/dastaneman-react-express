@@ -12,7 +12,7 @@ hgroup,
 main,
 nav,
 section,
-summary {
+excerpt {
     display: block;
 }
 
@@ -275,7 +275,7 @@ span,
 strike,
 strong,
 sub,
-summary,
+excerpt,
 sup,
 table,
 tbody,

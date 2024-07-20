@@ -1,9 +1,10 @@
 const express = require("express")
 const router = express.Router()
 
-const { profile } = require("../controllers/userController")
+const { getAllUsers, getSingleUser } = require("../controllers/userController")
 const { validateToken } = require("../middlewares/authMiddleware")
 
-router.get("/profile", validateToken, profile)
+router.get("/", getAllUsers)
+router.get("/:id", validateToken, getSingleUser)
 
 module.exports = router

@@ -23,17 +23,17 @@ function ProductDetail() {
   return (
     <RootLayout>
       <main className="page product-detail-page">
-        {product?.id ? (
+        {product?._id ? (
           <div className="container">
             <section className="content-section">
               <div className="product-img">
-                <img src={product.imgSrc} alt={product.title} />
+                <img src={product.image} alt={product.title} />
               </div>
               <div className="product-content">
                 <h1 className="product-title">{product.title}</h1>
-                <p className="product-detail">{product.detail}</p>
+                <p className="product-description">{product.description}</p>
                 <div className="product-price-box">
-                  <div className="product-price">قیمت از:‌{product.price} تومان</div>
+                  <div className="product-price">قیمت از: {product.price} تومان</div>
                   <div className="product-price-label">مطالعه آنلاین مجانی</div>
                 </div>
                 <Link to="./create" className="product-link">

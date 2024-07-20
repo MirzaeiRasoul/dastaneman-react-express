@@ -1,12 +1,28 @@
-const users = require("../mockData/users.json")
+const User = require("../models/User")
 
-const profile = (req, res) => {
-  const username = req.userPayload.username
-  const user = users.find(user => user.username == username)
-  
-  res.json({ success: true, result: user, error: null })
+//** ======================== Get all users ========================
+const getAllUsers = async (req, res) => {
+  try {
+    const users = await User.find()
+    res.json({ success: true, result: users, error: null })
+  } catch (err) {
+    res.status(500).json({ success: false, result: null, error: { errorCode: 500, message: "An error occurred while fetching users: " + err.message } })
+  }
+}
+
+//** ======================== Get single user ========================
+const getSingleUser = async (req, res) => {
+  const userId = req.params.id
+  try {
+    const user = await User.findById(userId)
+    if (!user) return res.status(404).json({ success: false, result: null, error: { errorCode: 404, message: "User not Found!" } })
+    res.json({ success: true, result: user, error: null })
+  } catch (err) {
+    res.status(500).json({ success: false, result: null, error: { errorCode: 500, message: "An error occurred while fetching the user: " + err.message } })
+  }
 }
 
 module.exports = {
-  profile,
+  getAllUsers,
+  getSingleUser,
 }
